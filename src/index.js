@@ -4,9 +4,16 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+const post = {
+  title:"1",
+  author:"2",
+  body:"3",
+  comments:["4", "5", "6"]
+};
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App post={post}/>
   </React.StrictMode>,
   document.getElementById('root')
 );
